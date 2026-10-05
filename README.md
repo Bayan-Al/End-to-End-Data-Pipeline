@@ -31,7 +31,7 @@ This repository houses a production-grade, end-to-end data pipeline and analytic
 * **Data Warehouse**: Google BigQuery acting as the centralized analytical storage layer.
 
 
-* **Transformation & Modeling**: `dbt` (Data Build Tool) utilizing a robust schema (`staging`, `dim_table`, `fact_table`).
+* **Transformation & Modeling**: `dbt` (Data Build Tool) utilizing a robust star schema (`staging`, `dim_table`, `fact_table`).
 
 
 * **Orchestration**: Mage AI managing pipeline dependencies and daily automated runs.
@@ -86,6 +86,7 @@ End-to-End-Data-Pipeline/
 
 
 
+
 ### 2. Data Modeling & Transformation (`dbt/`)
 
 The transformation layer is structured into rigorous modular tiers:
@@ -97,6 +98,7 @@ The transformation layer is structured into rigorous modular tiers:
 
 
 * **Fact Table (`fact_table.sql`)**: Materialized table isolating quantitative metrics such as store ratings, total reviews, refund days, and exchange periods linked via `business_id`.
+
 
 
 
@@ -120,7 +122,7 @@ The Power BI semantic model implements a clean star schema connecting `dim_table
 
 * **Idempotent Data Pipelines**: Deduplication logic built straight into the dbt staging layer ensures robust handling of repeated extractions.
 * **Modern Analytics Engineering**: Separation of concerns across raw ingestion, staging views, dimensional modeling, orchestration, and BI visualization.
-* **Security Best Practices**: Zero exposure of hardcoded secrets or production credentials, utilizing secure environment variables and placeholders across all scripts.
+
 
 
 
