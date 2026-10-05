@@ -47,19 +47,24 @@ This repository houses a production-grade, end-to-end data pipeline and analytic
 
 ```text
 End-to-End-Data-Pipeline/
-├── airbyte/                  # Ingestion connectors and configuration syncs
 ├── supabase/                 # Source PostgreSQL schema and database definitions
+│
+├── airbyte/                  # Ingestion connectors and configuration syncs
+│
 ├── bigquery/                 # BigQuery dataset structures and schema overviews
+│
 ├── dbt/                      # dbt transformation models (`saudi_commercial_dbt`)
 │   ├── models/
 │   │   ├── 1.staging/        # Staging views with text cleaning and deduplication
 │   │   └── 2.mart/           # Dimensional and fact tables (`dim_table`, `fact_table`)
 │   └── dbt_project.yml       # Project configuration and materialization rules
+│
 ├── mage/                     # Mage AI orchestration pipelines and API scripts
 │   ├── data_loader.py        # Python script triggering Airbyte API syncs
 │   └── pipeline run logs     # Execution metrics and DAG configurations
+│
 └── power_bi/                 # Analytical dashboards and data model exports
-    ├── Saudi Commercial Analytics.pbit[cite: 27]
+    ├── Saudi Commercial Analytics.pbit
     └── visuals/              # Visual exports (Regional breakdowns, business types, KPIs)
 
 ```
