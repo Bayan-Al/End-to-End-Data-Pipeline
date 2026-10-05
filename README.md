@@ -49,18 +49,18 @@ This repository houses a production-grade, end-to-end data pipeline and analytic
 End-to-End-Data-Pipeline/
 ├── airbyte/                  # Ingestion connectors and configuration syncs
 ├── supabase/                 # Source PostgreSQL schema and database definitions
-├── bigquery/                 # BigQuery dataset structures and schema overviews[cite: 17, 18, 19, 20, 21]
-├── dbt/                      # dbt transformation models (`saudi_commercial_dbt`)[cite: 18]
+├── bigquery/                 # BigQuery dataset structures and schema overviews
+├── dbt/                      # dbt transformation models (`saudi_commercial_dbt`)
 │   ├── models/
-│   │   ├── 1.staging/        # Staging views with text cleaning and deduplication[cite: 20, 23]
-│   │   └── 2.mart/           # Dimensional and fact tables (`dim_table`, `fact_table`)[cite: 19, 21]
-│   └── dbt_project.yml       # Project configuration and materialization rules[cite: 18]
-├── mage/                     # Mage AI orchestration pipelines and API scripts[cite: 31, 32, 33, 34, 35]
-│   ├── data_loader.py        # Python script triggering Airbyte API syncs[cite: 31]
-│   └── pipeline run logs     # Execution metrics and DAG configurations[cite: 32, 33, 34]
-└── power_bi/                 # Analytical dashboards and data model exports[cite: 27]
+│   │   ├── 1.staging/        # Staging views with text cleaning and deduplication
+│   │   └── 2.mart/           # Dimensional and fact tables (`dim_table`, `fact_table`)
+│   └── dbt_project.yml       # Project configuration and materialization rules
+├── mage/                     # Mage AI orchestration pipelines and API scripts
+│   ├── data_loader.py        # Python script triggering Airbyte API syncs
+│   └── pipeline run logs     # Execution metrics and DAG configurations
+└── power_bi/                 # Analytical dashboards and data model exports
     ├── Saudi Commercial Analytics.pbit[cite: 27]
-    └── visuals/              # Visual exports (Regional breakdowns, business types, KPIs)[cite: 25, 26, 27, 28, 29, 30]
+    └── visuals/              # Visual exports (Regional breakdowns, business types, KPIs)
 
 ```
 
