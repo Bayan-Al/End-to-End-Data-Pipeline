@@ -47,6 +47,7 @@ This repository houses a production-grade, end-to-end data pipeline and analytic
 
 ```text
 End-to-End-Data-Pipeline/
+│
 ├── supabase/                 # Source PostgreSQL schema and database definitions
 │
 ├── airbyte/                  # Ingestion connectors and configuration syncs
