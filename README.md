@@ -31,7 +31,7 @@ This repository houses a production-grade, end-to-end data pipeline and analytic
 * **Data Warehouse**: Google BigQuery acting as the centralized analytical storage layer.
 
 
-* **Transformation & Modeling**: `dbt` (Data Build Tool) utilizing a robust star schema (`staging`, `dim_table`, `fact_table`).
+* **Transformation & Modeling**: `dbt` (Data Build Tool) utilizing a robust schema (`staging`, `dim_table`, `fact_table`).
 
 
 * **Orchestration**: Mage AI managing pipeline dependencies and daily automated runs.
